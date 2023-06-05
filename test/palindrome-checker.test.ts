@@ -6,7 +6,7 @@ describe("Palindrome Checker",()=>{
 
        test('should have a function named palindrome checker defined',()=>{
 
-                     expect(palindromeChecker).toBeDefined()
+                     expect(palindromeChecker().isPalindrome).toBeDefined()
        })
 
        test('should be truthy for a single letter',()=>{

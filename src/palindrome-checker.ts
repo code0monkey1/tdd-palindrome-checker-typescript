@@ -2,14 +2,14 @@
 export const palindromeChecker=()=>{
 
       return {
-         isPalindrome:(str:string)=>{
+         isPalindrome:(original:string)=>{
                 
-              const reversed= str.split('')
+              const reversed= original.split('')
                                   .reverse()
                                   .join('')
-
+            
               
-              return removeSpaces(reversed.toLowerCase())===removeSpaces(str.toLowerCase());
+              return removeSpaces(reversed.toLowerCase())===removeSpaces(original.toLowerCase());
             
          }
       }
