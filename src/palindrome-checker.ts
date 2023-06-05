@@ -2,23 +2,24 @@
 export const palindromeChecker=()=>{
 
       return {
-         isPalindrome:(original:string)=>{
+         isPalindrome:(str:string)=>{
                 
-              const reversed= original.split('')
-                                  .reverse()
-                                  .join('')
-            
+              const reversed= reverseString(str)
               
-              return removeSpaces(reversed.toLowerCase())===removeSpaces(original.toLowerCase());
+              return removeSpaces(reversed.toLowerCase())===removeSpaces(str.toLowerCase());
             
          }
       }
 }
 
-const removeSpaces=(word:string):string=>{
-        
-  return word.split('')
-                .filter(c => c!==' ')
-                .join('')
+const removeSpaces=(str:string):string=>{
+    
+  return str.split(' ').join('')
+}
 
+const reverseString=(str:string):string=>{
+                return  str.split('')
+                                  .reverse()
+                                  .join('')
+            
 }
