@@ -9,6 +9,10 @@ Objectives :
 
 ## TDD Technique
 
+![TDD Cycle](./pictures/testing-loops.jpg "tdd development loop")
+
+---
+
 ![Acceptance Testing](./pictures/acceptance-test.jpg "acceptance tests")
 
 ---
@@ -16,5 +20,3 @@ Objectives :
 ![Acceptance Testing](./pictures/double-loop-tdd.jpg "double loop tdd")
 
 ---
-
-![TDD Cycle](./pictures/testing-loops.jpg "tdd development loop")
